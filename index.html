@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyliner - Privacy Policy</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, sans-serif;
+        background: linear-gradient(
+          135deg,
+          #87ceeb 0%,
+          #4a90e2 25%,
+          #6bb6ff 50%,
+          #87ceeb 75%,
+          #b8e6f0 100%
+        );
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      /* Cloud animations */
+      .cloud {
+        position: absolute;
+        background-image: url("cloud.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        animation: float 20s infinite linear;
+      }
+
+      .cloud1 {
+        width: 134vw;
+        height: 112vw;
+        top: 15%;
+        left: -15vw;
+        animation-duration: 25s;
+      }
+
+      .cloud2 {
+        width: 164vw;
+        height: 142vw;
+        top: 8%;
+        left: -20vw;
+        animation-duration: 30s;
+        animation-delay: -5s;
+        opacity: 0.6;
+      }
+
+      .cloud3 {
+        width: 134vw;
+        height: 112vw;
+        top: 25%;
+        left: -18vw;
+        animation-duration: 35s;
+        animation-delay: -10s;
+      }
+
+      .cloud4 {
+        width: 110vw;
+        height: 71vw;
+        top: 35%;
+        left: -13vw;
+        animation-duration: 28s;
+        animation-delay: -15s;
+        opacity: 0.7;
+      }
+
+      .cloud5 {
+        width: 111vw;
+        height: 71.5vw;
+        top: 5%;
+        left: -14vw;
+        animation-duration: 32s;
+        animation-delay: -20s;
+        opacity: 0.5;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateX(-20vw);
+        }
+        100% {
+          transform: translateX(calc(100vw + 20vw));
+        }
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        position: relative;
+        z-index: 10;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 50px;
+        color: #1a1a1a;
+      }
+
+      .app-name {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        color: #2c3e50;
+      }
+
+      .subtitle {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: #34495e;
+        margin-bottom: 30px;
+      }
+
+      .content {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .effective-date {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #7f8c8d;
+        margin-bottom: 40px;
+        font-style: italic;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #34495e;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #444;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      li {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 10px;
+      }
+
+      .intro {
+        font-size: 1.2rem;
+        color: #2c3e50;
+        background: rgba(52, 152, 219, 0.1);
+        padding: 25px;
+        border-radius: 15px;
+        border-left: 4px solid #3498db;
+        margin-bottom: 30px;
+      }
+
+      .contact-info {
+        background: rgba(46, 204, 113, 0.1);
+        padding: 25px;
+        border-radius: 15px;
+        border-left: 4px solid #2ecc71;
+        margin-top: 30px;
+      }
+
+      .contact-info p {
+        margin-bottom: 10px;
+      }
+
+      .highlight {
+        background: rgba(241, 196, 15, 0.2);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        .app-name {
+          font-size: 2.5rem;
+        }
+
+        .subtitle {
+          font-size: 1.2rem;
+        }
+
+        .content {
+          padding: 25px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .container {
+          padding: 20px 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    <div class="cloud cloud4"></div>
+    <div class="cloud cloud5"></div>
+
+    <div class="container">
+      <div class="header">
+        <h1 class="app-name">Skyliner</h1>
+        <p class="subtitle">Soaring through your social sky</p>
+      </div>
+
+      <div class="content">
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">
+          <strong>Effective Date:</strong> [Insert Date]
+        </p>
+
+        <h2>Introduction</h2>
+        <div class="intro">
+          Your privacy is important to us. This Privacy Policy outlines how
+          <span class="highlight">Skyliner</span> ("we," "us," or "our")
+          collects, uses, and protects your information when you use our
+          application. By using Skyliner, you agree to the collection and use of
+          information in accordance with this policy.
+        </div>
+
+        <h2>Information We Collect</h2>
+
+        <h3>1. Usage Analytics</h3>
+        <p>
+          We use <span class="highlight">PostHog</span> to collect usage
+          analytics to improve our app's functionality and user experience. This
+          data is collected in a way that is not tied to your personal identity.
+          The information collected includes:
+        </p>
+        <ul>
+          <li>App usage patterns</li>
+          <li>Feature usage</li>
+          <li>Performance metrics</li>
+        </ul>
+
+        <h3>2. Credentials Storage</h3>
+        <p>
+          We securely store your credentials in an
+          <span class="highlight">encrypted keychain</span>. This ensures that
+          your sensitive information is protected and not accessible to
+          unauthorized parties.
+        </p>
+
+        <h2>Data Sharing and Third Parties</h2>
+        <p>
+          As a client of <span class="highlight">Bluesky</span>, we inherit
+          their data interaction policies. We do not store any personal data or
+          usage analytics that can identify you. Our app may interact with
+          Bluesky's services, but any data shared is governed by Bluesky's
+          privacy practices.
+        </p>
+
+        <h2>Data Security</h2>
+        <p>
+          We take the security of your information seriously. We implement
+          reasonable technical and organizational measures to protect your data
+          from unauthorized access, disclosure, alteration, and destruction.
+          Your credentials are stored securely using encryption.
+        </p>
+
+        <h2>Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access the information we hold about you.</li>
+          <li>Request correction of any inaccuracies in your data.</li>
+          <li>Request deletion of your data, subject to legal obligations.</li>
+        </ul>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>
+          We may update our Privacy Policy from time to time. We will notify you
+          of any changes by posting the new Privacy Policy on this page. You are
+          advised to review this Privacy Policy periodically for any changes.
+        </p>
+
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          <p>
+            If you have any questions about this Privacy Policy, please contact
+            us at:
+          </p>
+          <p><strong>Email:</strong> [Your Contact Email]</p>
+          <p><strong>Address:</strong> [Your Contact Address]</p>
+        </div>
+
+        <p style="margin-top: 30px; font-style: italic; color: #7f8c8d">
+          Feel free to fill in the effective date and your contact information,
+          and make any additional modifications as needed.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
