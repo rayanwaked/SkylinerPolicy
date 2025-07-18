@@ -12,248 +12,209 @@
       }
 
       body {
-        font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
-          "Segoe UI", Roboto, sans-serif;
-        background: linear-gradient(
-          135deg,
-          #87ceeb 0%,
-          #4a90e2 25%,
-          #6bb6ff 50%,
-          #87ceeb 75%,
-          #b8e6f0 100%
-        );
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #0095ff;
+        color: #ffffff;
         min-height: 100vh;
-        position: relative;
-        overflow-x: hidden;
-      }
-
-      /* Cloud animations */
-      .cloud {
-        position: absolute;
-        background-image: url("cloud.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        opacity: 0.8;
-        animation: float 20s infinite linear;
-      }
-
-      .cloud1 {
-        width: 134vw;
-        height: 112vw;
-        top: 15%;
-        left: -15vw;
-        animation-duration: 25s;
-      }
-
-      .cloud2 {
-        width: 164vw;
-        height: 142vw;
-        top: 8%;
-        left: -20vw;
-        animation-duration: 30s;
-        animation-delay: -5s;
-        opacity: 0.6;
-      }
-
-      .cloud3 {
-        width: 134vw;
-        height: 112vw;
-        top: 25%;
-        left: -18vw;
-        animation-duration: 35s;
-        animation-delay: -10s;
-      }
-
-      .cloud4 {
-        width: 110vw;
-        height: 71vw;
-        top: 35%;
-        left: -13vw;
-        animation-duration: 28s;
-        animation-delay: -15s;
-        opacity: 0.7;
-      }
-
-      .cloud5 {
-        width: 111vw;
-        height: 71.5vw;
-        top: 5%;
-        left: -14vw;
-        animation-duration: 32s;
-        animation-delay: -20s;
-        opacity: 0.5;
-      }
-
-      @keyframes float {
-        0% {
-          transform: translateX(-20vw);
-        }
-        100% {
-          transform: translateX(calc(100vw + 20vw));
-        }
+        line-height: 1.6;
       }
 
       .container {
         max-width: 800px;
         margin: 0 auto;
-        padding: 40px 20px;
-        position: relative;
-        z-index: 10;
+        padding: 20px;
       }
 
       .header {
         text-align: center;
-        margin-bottom: 50px;
-        color: #1a1a1a;
+        margin-bottom: 30px;
+        padding: 40px 20px;
       }
 
       .app-name {
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 700;
-        margin-bottom: 10px;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        color: #2c3e50;
+        margin-bottom: 8px;
+        color: #0085ff;
+        text-shadow: 0 0 20px rgba(0, 133, 255, 0.3);
       }
 
       .subtitle {
-        font-size: 1.4rem;
-        font-weight: 300;
-        color: #34495e;
-        margin-bottom: 30px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #6f869f;
+        opacity: 0.9;
       }
 
-      .content {
-        background: rgba(255, 255, 255, 0.95);
-        border-radius: 20px;
+      .content-card {
+        background: #ffffff;
+        color: #1a1a1a;
+        border-radius: 16px;
         padding: 40px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
       }
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
         font-weight: 700;
-        color: #2c3e50;
-        margin-bottom: 10px;
+        color: #1a1a1a;
+        margin-bottom: 8px;
         text-align: center;
       }
 
       .effective-date {
         text-align: center;
-        font-size: 1.1rem;
-        color: #7f8c8d;
-        margin-bottom: 40px;
+        font-size: 1rem;
+        color: #6b7280;
+        margin-bottom: 32px;
         font-style: italic;
       }
 
       h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 600;
-        color: #34495e;
-        margin-top: 35px;
-        margin-bottom: 20px;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 10px;
+        color: #1a1a1a;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        border-bottom: 2px solid #0085ff;
+        padding-bottom: 8px;
       }
 
       h3 {
-        font-size: 1.4rem;
+        font-size: 1.25rem;
         font-weight: 600;
-        color: #2c3e50;
-        margin-top: 25px;
-        margin-bottom: 15px;
+        color: #374151;
+        margin-top: 24px;
+        margin-bottom: 12px;
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.7;
-        color: #444;
-        margin-bottom: 20px;
+        color: #374151;
+        margin-bottom: 16px;
       }
 
       ul {
         margin-left: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
       }
 
       li {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.6;
-        color: #555;
-        margin-bottom: 10px;
+        color: #4b5563;
+        margin-bottom: 8px;
       }
 
       .intro {
-        font-size: 1.2rem;
-        color: #2c3e50;
-        background: rgba(52, 152, 219, 0.1);
-        padding: 25px;
-        border-radius: 15px;
-        border-left: 4px solid #3498db;
-        margin-bottom: 30px;
+        font-size: 1.1rem;
+        color: #1f2937;
+        background: #f0f9ff;
+        padding: 20px;
+        border-radius: 12px;
+        border-left: 4px solid #0085ff;
+        margin-bottom: 24px;
       }
 
       .contact-info {
-        background: rgba(46, 204, 113, 0.1);
-        padding: 25px;
-        border-radius: 15px;
-        border-left: 4px solid #2ecc71;
-        margin-top: 30px;
+        background: #f0fdf4;
+        padding: 20px;
+        border-radius: 12px;
+        border-left: 4px solid #10b981;
+        margin-top: 24px;
       }
 
       .contact-info p {
-        margin-bottom: 10px;
+        margin-bottom: 8px;
+        color: #065f46;
       }
 
       .highlight {
-        background: rgba(241, 196, 15, 0.2);
+        background: #fef3c7;
         padding: 2px 6px;
         border-radius: 4px;
         font-weight: 500;
+        color: #92400e;
       }
 
+      /* Subtle floating animation for the header */
+      .header {
+        animation: gentleFloat 6s ease-in-out infinite;
+      }
+
+      @keyframes gentleFloat {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+
+      /* Hover effects */
+      .content-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .content-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Responsive design */
       @media (max-width: 768px) {
         .app-name {
           font-size: 2.5rem;
         }
 
         .subtitle {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
         }
 
-        .content {
-          padding: 25px;
+        .content-card {
+          padding: 24px;
+          margin: 0 10px 20px 10px;
         }
 
         h1 {
-          font-size: 2rem;
+          font-size: 1.875rem;
         }
 
         h2 {
-          font-size: 1.5rem;
+          font-size: 1.25rem;
         }
 
         .container {
-          padding: 20px 15px;
+          padding: 15px;
+        }
+
+        .header {
+          padding: 30px 15px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .app-name {
+          font-size: 2rem;
+        }
+        
+        .content-card {
+          padding: 20px;
+          margin: 0 5px 20px 5px;
         }
       }
     </style>
   </head>
   <body>
-    <div class="cloud cloud1"></div>
-    <div class="cloud cloud2"></div>
-    <div class="cloud cloud3"></div>
-    <div class="cloud cloud4"></div>
-    <div class="cloud cloud5"></div>
-
     <div class="container">
       <div class="header">
         <h1 class="app-name">Skyliner</h1>
         <p class="subtitle"><b>Soaring through your social sky</b></p>
       </div>
 
-      <div class="content">
+      <div class="content-card">
         <h1>Privacy Policy</h1>
         <p class="effective-date">
           <strong>Effective Date:</strong> July 16, 2025
@@ -329,10 +290,10 @@
             If you have any questions about this Privacy Policy, please contact
             us at:
           </p>
-          <p><strong>Bluesky:</strong>@skyliner.app</p>
+          <p><strong>Bluesky:</strong> @skyliner.app</p>
         </div>
 
-        <p style="margin-top: 30px; font-style: italic; color: #7f8c8d">
+        <p style="margin-top: 30px; font-style: italic; color: #6b7280;">
         </p>
       </div>
     </div>
